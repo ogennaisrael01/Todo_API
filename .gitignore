@@ -1,0 +1,14 @@
+.env
+.venv
+
+__pyscache__
+instance
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.mo
+*.swp
