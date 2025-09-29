@@ -12,3 +12,8 @@ instance
 *.pot
 *.mo
 *.swp
+
+.vscode
+.idea
+.github
+.DS_Store

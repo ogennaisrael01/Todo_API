@@ -2,7 +2,7 @@
 
 A robust, extensible RESTful API for managing personal tasks, built with FastAPI and SQLAlchemy. This project supports user authentication, task CRUD operations, and advanced features for productivity and organization.
 
-## 🚀 Core Features (MVP)
+## Features
 
 1. **User Authentication**
    - Register and log in users (JWT-based).
@@ -22,22 +22,15 @@ A robust, extensible RESTful API for managing personal tasks, built with FastAPI
 5. **Delete Task**
    - Remove a task permanently.
 
----
-
-## 🎯 Intermediate Features
-
 6. **Mark Task as Completed/Incomplete**
    - Toggle status between done and not done.
 
-7. **Categories/Tags**
-   - Organize tasks into categories (e.g., work, personal, shopping).
-
 8. **Sorting and Filtering**
-   - Sort by due date, priority, or creation date.
-   - Filter by category or status.
+   - Sort by due task
+
 
 9. **Reminders / Notifications**
-   - Background job to send email or push reminders for upcoming tasks.
+   - Inapp notifications for upcoming tasks.
 
 10. **Search**
     - Keyword search in tasks.
