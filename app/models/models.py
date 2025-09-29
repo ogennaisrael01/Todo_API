@@ -20,7 +20,7 @@ class Todo(Base):
 
     id = Column(Integer, nullable=False, primary_key= True)
     task = Column(String, nullable=False)
-    description = Column(String, nullable=True)
+    description = Column(String, nullable=True)     
     completed = Column(Boolean, default=False)
     due_date = Column(TIMESTAMP(timezone=True), nullable=True)
     priority = Column(String, nullable=True)
@@ -29,5 +29,14 @@ class Todo(Base):
     updated_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()"), onupdate=text("now()"))
 
     user = relationship("User")
+
+
+class Notification(Base):
+    __tablename__ = "notifications"
+
+    id = Column(Integer, nullable=False,primary_key=True)
+    reciever = Column(Integer, ForeignKey("users.id"), nullable=False)
+    message = Column(String, nullable=False)
+    created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()")) 
 
     
