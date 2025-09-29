@@ -1,5 +1,5 @@
 from app.models.models import Notification
-from app.utils.security import get_current_user, get_user
+from app.utils.security import get_user
 
 class NotificationService:
     @staticmethod   

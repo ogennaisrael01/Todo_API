@@ -2,7 +2,6 @@ from app.database.database import get_db
 from app.utils.security import get_current_user
 from sqlalchemy.orm import Session
 from app.services.notification_service import NotificationService
-from app.models.schemas import NotificationOut
 from fastapi import Depends, status, APIRouter
 
 
