@@ -17,3 +17,4 @@ instance
 .idea
 .github
 .DS_Store
+.vercel
