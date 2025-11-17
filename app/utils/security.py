@@ -24,7 +24,7 @@ def get_access_token(data: dict):
     if not settings.token_expire_minutes:
         expire_minute = datetime.utcnow() + timedelta(minutes=30)
     else:
-        expire_minute = datetime.utcnow() + timedelta(minutes=settings.token_expire_minutes)
+        expire_minute = datetime.utcnow() + timedelta(minutes=int(settings.token_expire_minutes))
 
     data_to_encode.update({"exp": expire_minute})
     encoded_jwt = jwt.encode(data_to_encode, settings.secrect_key, settings.algorithm)
